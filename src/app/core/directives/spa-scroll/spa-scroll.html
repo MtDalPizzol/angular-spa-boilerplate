@@ -1,0 +1,12 @@
+<div class="spa-scroll"
+  ng-class="{
+    'flex': scrollFlex === 'true'
+  }">
+  <div class="spa-scroll__content" ng-transclude
+    ng-class="{
+      'layout-column': scrollLayout === 'column',
+      'layout-row': scrollLayout === 'row',
+      'flex': scrollFlex === 'true'
+    }">
+  </div>
+</div>

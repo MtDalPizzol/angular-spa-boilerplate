@@ -1,0 +1,350 @@
+$color-base: #222930;
+$color-default: #E9E9E9;
+$color-accent: #4EB1BA;
+
+/**
+ * *******************************
+ * Material Design primary palette
+ * *******************************
+ */
+
+$md-primary-50: #E1F5FE;
+$md-primary-100: #B3E5FC;
+$md-primary-200: #81D4FA;
+$md-primary-300: #4FC3F7;
+$md-primary-400: #29B6F6;
+$md-primary-500: #03A9F4;
+$md-primary-600: #039BE5;
+$md-primary-700: #0288D1;
+$md-primary-800: #0277BD;
+$md-primary-900: #01579B;
+$md-primary-A100: #80D8FF;
+$md-primary-A200: #40C4FF;
+$md-primary-A400: #00B0FF;
+$md-primary-A700: #0091EA;
+
+/**
+ * ******************************
+ * Material Design accent palette
+ * ******************************
+ */
+
+$md-accent-50: #FCE4EC;
+$md-accent-100: #F8BBD0;
+$md-accent-200: #F48FB1;
+$md-accent-300: #F06292;
+$md-accent-400: #EC407A;
+$md-accent-500: #E91E63;
+$md-accent-600: #D81B60;
+$md-accent-700: #C2185B;
+$md-accent-900: #880E4F;
+$md-accent-800: #AD1457;
+$md-accent-A100: #FF80AB;
+$md-accent-A200: #FF4081;
+$md-accent-A400: #F50057;
+$md-accent-A700: #C51162;
+
+/**
+ * ****************************
+ * Material Design base palette
+ * ****************************
+ */
+
+$md-base-50: #ECEFF1;
+$md-base-100: #CFD8DC;
+$md-base-200: #B0BEC5;
+$md-base-300: #90A4AE;
+$md-base-400: #78909C;
+$md-base-500: #607D8B;
+$md-base-600: #546E7A;
+$md-base-700: #455A64;
+$md-base-800: #37474F;
+$md-base-900: #263238;
+
+/**
+ * ******************************************
+ * Material Design primary background classes
+ * ******************************************
+ */
+
+.md-bg-primary {
+  background-color: $md-primary-500;
+}
+.md-bg-primary-50 {
+  background-color: $md-primary-50;
+}
+.md-bg-primary-100 {
+  background-color: $md-primary-100;
+}
+.md-bg-primary-200 {
+  background-color: $md-primary-200;
+}
+.md-bg-primary-300 {
+  background-color: $md-primary-300;
+}
+.md-bg-primary-400 {
+  background-color: $md-primary-400;
+}
+.md-bg-primary-500 {
+  background-color: $md-primary-500;
+}
+.md-bg-primary-600 {
+  background-color: $md-primary-600;
+}
+.md-bg-primary-700 {
+  background-color: $md-primary-700;
+}
+.md-bg-primary-800 {
+  background-color: $md-primary-800;
+}
+.md-bg-primary-900 {
+  background-color: $md-primary-900;
+}
+.md-bg-primary-A100 {
+  background-color: $md-primary-A100;
+}
+.md-bg-primary-A200 {
+  background-color: $md-primary-A200;
+}
+.md-bg-primary-A400 {
+  background-color: $md-primary-A400;
+}
+.md-bg-primary-A700 {
+  background-color: $md-primary-A700;
+}
+
+/**
+ * ************************************
+ * Material Design primary text classes
+ * ************************************
+ */
+
+.md-text-primary {
+  color: $md-primary-500;
+}
+.md-text-primary-50 {
+  color: $md-primary-50;
+}
+.md-text-primary-100 {
+  color: $md-primary-100;
+}
+.md-text-primary-200 {
+  color: $md-primary-200;
+}
+.md-text-primary-300 {
+  color: $md-primary-300;
+}
+.md-text-primary-400 {
+  color: $md-primary-400;
+}
+.md-text-primary-500 {
+  color: $md-primary-500;
+}
+.md-text-primary-600 {
+  color: $md-primary-600;
+}
+.md-text-primary-700 {
+  color: $md-primary-700;
+}
+.md-text-primary-800 {
+  color: $md-primary-800;
+}
+.md-text-primary-900 {
+  color: $md-primary-900;
+}
+.md-text-primary-A100 {
+  color: $md-primary-A100;
+}
+.md-text-primary-A200 {
+  color: $md-primary-A200;
+}
+.md-text-primary-A400 {
+  color: $md-primary-A400;
+}
+.md-text-primary-A700 {
+  color: $md-primary-A700;
+}
+
+/**
+ * *****************************************
+ * Material Design accent background classes
+ * *****************************************
+ */
+
+.md-bg-accent {
+  background-color: $md-accent-500;
+}
+.md-bg-accent-50 {
+  background-color: $md-accent-50;
+}
+.md-bg-accent-100 {
+  background-color: $md-accent-100;
+}
+.md-bg-accent-200 {
+  background-color: $md-accent-200;
+}
+.md-bg-accent-300 {
+  background-color: $md-accent-300;
+}
+.md-bg-accent-400 {
+  background-color: $md-accent-400;
+}
+.md-bg-accent-500 {
+  background-color: $md-accent-500;
+}
+.md-bg-accent-600 {
+  background-color: $md-accent-600;
+}
+.md-bg-accent-700 {
+  background-color: $md-accent-700;
+}
+.md-bg-accent-800 {
+  background-color: $md-accent-800;
+}
+.md-bg-accent-900 {
+  background-color: $md-accent-900;
+}
+.md-bg-accent-A100 {
+  background-color: $md-accent-A100;
+}
+.md-bg-accent-A200 {
+  background-color: $md-accent-A200;
+}
+.md-bg-accent-A400 {
+  background-color: $md-accent-A400;
+}
+.md-bg-accent-A700 {
+  background-color: $md-accent-A700;
+}
+
+/**
+ * ***********************************
+ * Material Design accent text classes
+ * ***********************************
+ */
+
+.md-text-accent {
+  color: $md-accent-500;
+}
+.md-text-accent-50 {
+  color: $md-accent-50;
+}
+.md-text-accent-100 {
+  color: $md-accent-100;
+}
+.md-text-accent-200 {
+  color: $md-accent-200;
+}
+.md-text-accent-300 {
+  color: $md-accent-300;
+}
+.md-text-accent-400 {
+  color: $md-accent-400;
+}
+.md-text-accent-500 {
+  color: $md-accent-500;
+}
+.md-text-accent-600 {
+  color: $md-accent-600;
+}
+.md-text-accent-700 {
+  color: $md-accent-700;
+}
+.md-text-accent-800 {
+  color: $md-accent-800;
+}
+.md-text-accent-900 {
+  color: $md-accent-900;
+}
+.md-text-accent-A100 {
+  color: $md-accent-A100;
+}
+.md-text-accent-A200 {
+  color: $md-accent-A200;
+}
+.md-text-accent-A400 {
+  color: $md-accent-A400;
+}
+.md-text-accent-A700 {
+  color: $md-accent-A700;
+}
+
+/**
+ * ***************************************
+ * Material Design base background classes
+ * ***************************************
+ */
+
+.md-bg-base {
+  background-color: $md-base-500;
+}
+.md-bg-base-50 {
+  background-color: $md-base-50;
+}
+.md-bg-base-100 {
+  background-color: $md-base-100;
+}
+.md-bg-base-200 {
+  background-color: $md-base-200;
+}
+.md-bg-base-300 {
+  background-color: $md-base-300;
+}
+.md-bg-base-400 {
+  background-color: $md-base-400;
+}
+.md-bg-base-500 {
+  background-color: $md-base-500;
+}
+.md-bg-base-600 {
+  background-color: $md-base-600;
+}
+.md-bg-base-700 {
+  background-color: $md-base-700;
+}
+.md-bg-base-800 {
+  background-color: $md-base-800;
+}
+.md-bg-base-900 {
+  background-color: $md-base-900;
+}
+
+/**
+ * *********************************
+ * Material Design base text classes
+ * *********************************
+ */
+
+.md-text-base {
+  color: $md-base-500;
+}
+.md-text-base-50 {
+  color: $md-base-50;
+}
+.md-text-base-100 {
+  color: $md-base-100;
+}
+.md-text-base-200 {
+  color: $md-base-200;
+}
+.md-text-base-300 {
+  color: $md-base-300;
+}
+.md-text-base-400 {
+  color: $md-base-400;
+}
+.md-text-base-500 {
+  color: $md-base-500;
+}
+.md-text-base-600 {
+  color: $md-base-600;
+}
+.md-text-base-700 {
+  color: $md-base-700;
+}
+.md-text-base-800 {
+  color: $md-base-800;
+}
+.md-text-base-900 {
+  color: $md-base-900;
+}

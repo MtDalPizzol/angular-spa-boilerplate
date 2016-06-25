@@ -1,0 +1,58 @@
+<p>
+  This form dosn't handle any data.
+  <br>
+  Submit it to see a notification at the top right corner of the page and to be redirected to the list state.
+</p>
+
+<div class="default-layout__content crud" md-whiteframe="1" flex="50">
+  <form name="personForm" class="crud__form" ng-init="vm.setFormScope(this)" ng-submit="vm.save()">
+
+    <md-input-container class="md-block" flex-gt-sm>
+      <label>Name</label>
+      <input name="name">
+    </md-input-container>
+
+    <md-input-container class="md-block" flex-gt-sm>
+      <label>Address</label>
+      <input>
+    </md-input-container>
+
+    <md-input-container class="md-block" flex-gt-sm>
+      <label>Number</label>
+      <input>
+    </md-input-container>
+
+    <div layout="row">
+      <div ng-cloak flex="50">
+        <p>Some nice switches:</p>
+        <md-switch ng-model="data.cb1" aria-label="Switch 1">
+          Switch 1: {{ data.cb1 }}
+        </md-switch>
+        <md-switch ng-model="data.cb2" aria-label="Switch 2" ng-true-value="'yup'" ng-false-value="'nope'" class="md-warn">
+          Switch 2 (md-warn): {{ data.cb2 }}
+        </md-switch>
+        <md-switch ng-disabled="true" aria-label="Disabled switch" ng-model="disabledModel">
+          Switch (Disabled)
+        </md-switch>
+      </div>
+      <div flex="50">
+        <p>Selected radio: <span class="radioValue">{{ data.group1 }}</span> </p>
+        <md-radio-group ng-model="data.group1">
+          <md-radio-button value="Apple" class="md-primary">Apple</md-radio-button>
+          <md-radio-button value="Banana"> Banana </md-radio-button>
+          <md-radio-button value="Mango">Mango</md-radio-button>
+        </md-radio-group>
+      </div>
+
+    </div>
+
+    <div layout="row">
+      <span flex></span>
+      <md-button type="submit" class="md-accent md-raised" aria-label="Save person">
+        <md-icon md-svg-src="content-save"></md-icon>
+        <md-tooltip md-direction="left">Save person</md-tooltip>
+      </md-button>
+    </div>
+
+  </form>
+</div>

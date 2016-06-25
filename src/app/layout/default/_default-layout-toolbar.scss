@@ -1,0 +1,37 @@
+.default-toolbar {
+  background: rgb(255, 255, 255) !important;
+  &__tools {
+    padding: 0 !important;
+  }
+  .default-toolbar__button {
+    min-height: 0;
+    min-width: 64px;
+    height: 100%;
+    border-radius: 0;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  &__menu-bar {
+    padding: 0;
+    height: 100%;
+    .default-toolbar__menu {
+      height: 100%;
+      & > .default-toolbar__menu-button {
+        height: 100%;
+        margin: 0;
+        padding: 0 16px;
+        text-transform: none;
+        span {
+          display: inline-block;
+          margin-left: 8px
+        }
+        md-icon {
+          height: 16px;
+          width: 16px;
+          line-height: 16px;
+          margin-left: 12px;
+        }
+      }
+    }
+  }
+}

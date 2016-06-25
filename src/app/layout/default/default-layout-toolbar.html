@@ -1,0 +1,24 @@
+<md-toolbar class="default-toolbar md-whiteframe-1dp">
+  <div class="default-toolbar__tools md-toolbar-tools">
+    <md-button class="default-toolbar__button" ng-click="layoutVm.toggleSidenav('default-sidenav')" hide-gt-md aria-label="menu">
+      <md-icon md-svg-icon="menu"></md-icon>
+    </md-button>
+    <span flex></span>
+    <md-menu-bar class="default-toolbar__menu-bar">
+      <md-menu class="default-toolbar__menu" ng-if="session.isAuthenticated()" md-position-mode="left bottom">
+       <md-button class="default-toolbar__menu-button" ng-click="$mdOpenMenu($event)">
+         <span>{{session.user.name}}</span>
+         <md-icon md-svg-icon="chevron-down"></md-icon>
+       </md-button>
+       <md-menu-content width="3">
+         <md-menu-item>
+           <md-button ng-click="session.logut()">
+             <md-icon md-svg-icon="logout-variant"></md-icon>
+             <span>Logout</span>
+           </md-button>
+         </md-menu-item>
+       </md-menu-content>
+      </md-menu>
+    </md-menu-bar>
+  </div>
+</md-toolbar>

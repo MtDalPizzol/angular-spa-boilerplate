@@ -1,0 +1,12 @@
+form .hint {
+  clear: both;
+  padding-top: 8px;
+	&, & a {
+		font-size: 12px;
+		color: rgba(0, 0, 0, 0.38);
+    text-decoration: none;
+	}
+  & a:hover {
+    color: rgba(0, 0, 0, 0.5);
+  }
+}

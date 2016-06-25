@@ -1,0 +1,25 @@
+<div id="login" md-whiteframe="8">
+  <div class="logo md-text-primary-500">SPA</div>
+  <div class="text-center md-subhead" style="margin: 40px 0 32px;">Faça seu login</div>
+  <div>
+    <form name="vm.form" ng-submit="vm.submitForm()" novalidate>
+      <md-input-container class="md-block">
+        <label for="login-email">Email</label>
+        <input ng-model="vm.email" name="email" type="email" class="form-control" id="login-email" required>
+        <div ng-messages="vm.form.email.$error" ng-show="vm.form.email.$touched">
+          <div ng-messages-include="messages.html"></div>
+        </div>
+      </md-input-container>
+      <md-input-container class="md-block">
+        <label for="login-password">Password</label>
+        <input ng-model="vm.password" name="password" type="password" class="form-control" id="login-password" required>
+        <div ng-messages="vm.form.password.$error" ng-show="vm.form.password.$touched">
+          <div ng-messages-include="messages.html"></div>
+        </div>
+      </md-input-container>
+      <div class="text-center">
+          <button type="submit" class="md-button md-raised md-primary md-hue-2" ng-disabled="vm.form.$invalid" style="width: 200px;">Entrar</button>
+      </div>
+    </form>
+  </div>
+</div>

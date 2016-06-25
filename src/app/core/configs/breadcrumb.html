@@ -1,0 +1,8 @@
+<ul class="default-layout__breadcrumbs">
+  <li ng-repeat="step in steps" ng-switch="$last || !!step.abstract">
+    <md-icon ng-if="$index == 0" md-svg-icon="home"></md-icon>
+    <a ng-switch-when="false" ui-sref="{{step.name}}">{{step.ncyBreadcrumbLabel}}</a>
+    <md-icon ng-switch-when="false" md-svg-icon="chevron-right"></md-icon>
+    <span ng-switch-when="true">{{step.ncyBreadcrumbLabel}}</span>
+  </li>
+</ul>

@@ -1,0 +1,8 @@
+@import "core/core";
+
+.logo {
+  @include font-logo();
+  font-size: 62px;
+  margin: 0;
+  text-align: center;
+}

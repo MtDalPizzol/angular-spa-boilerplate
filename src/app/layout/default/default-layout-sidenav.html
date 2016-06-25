@@ -1,0 +1,21 @@
+<md-sidenav md-component-id="default-sidenav" class="default-sidenav" md-whiteframe="4" md-is-locked-open="$mdMedia('gt-sm')" flex>
+
+  <md-toolbar id="nav-header" class="default-sidenav__toolbar md-whiteframe-1dp" layout="row">
+    <div class="logo" flex>NG SPA</div>
+  </md-toolbar>
+
+  <ul class="default-sidenav__navigation">
+    <li class="default-sidenav__list">
+      <span class="default-sidenav__subheader">Sidenav subheader</span>
+      <ul>
+        <li class="default-sidenav__item" ng-repeat="item in vm.items" role="link">
+          <a class="default-sidenav__link" ng-if="item.state" ui-sref="{{item.state}}" ui-sref-active="default-sidenav__link_active" md-ink-ripple>
+            <md-icon md-svg-icon="{{item.icon}}" aria-label="{{item.title}}"></md-icon>
+            <span>{{item.title}}</span>
+          </a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+</md-sidenav>

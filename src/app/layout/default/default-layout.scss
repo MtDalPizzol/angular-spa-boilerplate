@@ -1,0 +1,50 @@
+@import './default-layout-toolbar';
+@import './default-layout-sidenav';
+
+.default-layout {
+  &__main {
+    background: rgb(250, 250, 250);
+    padding: 24px;
+  }
+  &__content {
+    background: rgb(255, 255, 255);
+  }
+  &__header {
+    padding: 24px;
+    background-image: url(/img/header-pattern.png);
+    background-position: center;
+  }
+  &__breadcrumbs {
+    list-style: none;
+    font-size: 13px;
+    margin: 0 0 24px 0;
+    padding: 0;
+    text-transform: uppercase;
+    color: rgba(0,0,0,0.54);
+    li {
+      display: inline-block;
+    }
+    a {
+      text-decoration: none;
+      color: rgba(0,0,0,0.38);
+      &:hover {
+        color: rgba(0,0,0,0.54);
+      }
+    }
+    span {
+      color: rgba(0,0,0,0.54);
+      font-weight: 500;
+    }
+    md-icon {
+      width: 16px;
+      margin-top: -3px;
+      margin-right: 3px;
+    }
+  }
+  &__title {
+    color: rgb(255, 255, 255);
+    font-size: 34px;
+    font-weight: normal;
+    margin: 0;
+  }
+}

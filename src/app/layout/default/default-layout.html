@@ -1,0 +1,13 @@
+<div class="default-layout" layout="row" flex>
+  <div ui-view="nav" layout="column"></div>
+  <div layout="column" flex>
+    <div ui-view="toolbar"></div>
+    <div class="default-layout__header md-bg-primary-500">
+      <div ncy-breadcrumb></div>
+      <h1 class="default-layout__title">{{ stateTitle }}</h1>
+    </div>
+    <spa-scroll layout="column" md-whiteframe="18" flex-layout="true">
+      <main class="default-layout__main" ui-view="main" flex></main>
+    </spa-scroll>
+  </div>
+</div>

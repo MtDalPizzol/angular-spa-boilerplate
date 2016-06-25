@@ -1,0 +1,15 @@
+.crud {
+  &__form {
+    position: relative;
+    padding: 24px;
+  }
+  &__button-action_primary {
+    position: fixed;
+    right: 32px;
+    top: 164px;
+    padding: 0;
+    a {
+      display: block;
+    }
+  }
+}

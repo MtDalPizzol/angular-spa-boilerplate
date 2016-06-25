@@ -1,0 +1,68 @@
+@import '../../core/styles/colors';
+
+.default-sidenav {
+  width: 240px;
+  background: #263238;
+  &__toolbar {
+    background: #263238 !important;
+    padding: 0 16px;
+    .logo {
+      color: $md-primary-500;
+      font-size: 22px;
+      margin: auto;
+      text-align: left;
+    }
+    md-icon {
+      fill: rgba(255, 255, 255, 0.38);
+    }
+  }
+  &__navigation {
+    margin: 0;
+    padding: 0;
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+    & > .default-sidenav__list {
+      & + & {
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
+        margin-top: 8px;
+      }
+    }
+    .default-sidenav__list {
+      .default-sidenav__subheader {
+        display: block;
+        padding: 0 16px;
+        color: rgba(255, 255, 255, 0.50);
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 48px;
+      }
+      .default-sidenav__link {
+        position: relative;
+        display: block;
+        padding: 12px 16px 12px 14px;
+        font-size: 16px;
+        font-weight: 400;
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.7);
+        md-icon {
+          fill: rgba(255, 255, 255, 0.7);
+          margin: auto 34px auto 0;
+        }
+        &:hover {
+          color: rgb(255, 255, 255);
+          background: rgba(0, 0, 0, 0.2);
+        }
+        &_active, &_active:hover {
+          color: $md-primary-500;
+          background: none;
+          cursor: default;
+          md-icon {
+            fill: $md-primary-500;
+          }
+        }
+      }
+    }
+  }
+}

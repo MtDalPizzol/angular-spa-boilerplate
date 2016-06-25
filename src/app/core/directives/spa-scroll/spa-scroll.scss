@@ -1,0 +1,9 @@
+.spa-scroll {
+  position: relative;
+  &__content {
+    position: absolute;
+    overflow-y: hidden;
+    width: 100%;
+    height: 100%;
+  }
+}
