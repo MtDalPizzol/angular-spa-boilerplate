@@ -1,10 +1,11 @@
 # angular-spa-boilerplate
 A boilerplate for writing Angular 1.x single page applications with ES6 and Webpack.
 
->This is an "a little opinionated" boilerplate. It takes care of the basics and comes with one or two dependencies that you, maybe, will not use.
->Just uninstall them in this case.
->
->I'm going to create another repo with a realy heavly opinionated version of this, which should take care of things like authentication, server communication, internacionalization and others...
+> First of all, a big thanks to [Jesús Rodríguez](https://github.com/Foxandxss), from whom I stole the main Webpack config and the basic structure of this README file. Don't forget to checkout his work. It's awesome.
+
+This is an "a little opinionated" boilerplate. It takes care of the basics and comes with one or two dependencies that you, maybe, will not use. Just uninstall them in this case.
+
+I'm going to create another repo with a realy heavly opinionated version of this, which should take care of things like authentication, server communication, internacionalization and others...
 
 ## Features included
 
