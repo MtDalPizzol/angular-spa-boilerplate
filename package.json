@@ -33,6 +33,7 @@
     "angular-ui-router": "^0.2.18",
     "express": "^4.13.4",
     "jquery": "^2.2.1",
+    "lodash": "^4.13.1",
     "mdi": "^1.4.57",
     "oclazyload": "^1.0.9",
     "perfect-scrollbar": "^0.6.10"
