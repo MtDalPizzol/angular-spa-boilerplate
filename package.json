@@ -11,8 +11,16 @@
     "deploy": "node server.js"
   },
   "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MtDalPizzol/angular-spa-boilerplate.git"
+  },
   "author": "Matheus Dal'Pizzol",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MtDalPizzol/angular-spa-boilerplate/issues"
+  },
+  "homepage": "https://github.com/MtDalPizzol/angular-spa-boilerplate",
   "dependencies": {
     "angular": "^1.5.0",
     "angular-animate": "^1.5.0",
@@ -25,7 +33,6 @@
     "angular-ui-router": "^0.2.18",
     "express": "^4.13.4",
     "jquery": "^2.2.1",
-    "lodash": "^4.5.1",
     "mdi": "^1.4.57",
     "oclazyload": "^1.0.9",
     "perfect-scrollbar": "^0.6.10"

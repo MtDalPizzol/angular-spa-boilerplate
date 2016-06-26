@@ -1,6 +1,5 @@
 import 'angular-material/angular-material.min.css';
 
-import _ from 'lodash';
 import angular from 'angular';
 import uiRouter from 'angular-ui-router';
 import ocLazyLoad from 'oclazyload';
