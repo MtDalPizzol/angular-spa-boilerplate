@@ -3,7 +3,20 @@ function peopleRouting($stateProvider, CRUD) {
   $stateProvider.state('people', {
     abstract: true,
     parent: 'default',
-    url: '/people'
+    url: '/people',
+    resolve: {
+      loadPeopleDataService: ($q, $ocLazyLoad) => {
+        return $q((resolve) => {
+          require.ensure([], () => {
+            let module = require('./people-data.service');
+            $ocLazyLoad.load({
+              name: module
+            });
+            resolve(module);
+          });
+        });
+      }
+    }
   })
 
   .state('people.list', {
@@ -31,6 +44,9 @@ function peopleRouting($stateProvider, CRUD) {
                 resolve(module);
               });
             });
+          },
+          people: (People) => {
+            return People.find();
           }
         }
       }
@@ -56,7 +72,7 @@ function peopleRouting($stateProvider, CRUD) {
           loadPeopleAddController: ($q, $ocLazyLoad) => {
             return $q((resolve) => {
               require.ensure([], () => {
-                let module = require('./people.add.controller');
+                let module = require('./people-add.controller');
                 $ocLazyLoad.load({
                   name: module
                 });

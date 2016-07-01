@@ -18,6 +18,7 @@ I'm going to create another repo with a really heavily opinionated version of th
   * [Running the development server](#running-the-development-server)
   * [Building files for production](#building-files-for-production)
   * [Deploying](#deploying)
+  * [Testing](#testing)
 * [About the demo app](#about-the-demo-app)
   * [Dependencies](#dependencies)
   * [Pages](#pages)
@@ -27,9 +28,9 @@ I'm going to create another repo with a really heavily opinionated version of th
 ## Features included
 
 * Heavily commented webpack configuration with reasonable defaults.
-* **ES6**, and **ES7** support with **Babel**.
-* **ngAnnotate** integration for cleaner code and "non-breackable" **JavaScript minification**.
-* **SASS** automatic compilation and **watch** with `sass-loader` for Webpack.
+* **ES6**, and **ES7** support with **[Babel](https://babeljs.io/)**.
+* **[ngAnnotate](https://github.com/olov/ng-annotate)** integration for cleaner code and "non-breackable" **JavaScript minification**.
+* **[SASS](http://sass-lang.com/)** automatic compilation and **watch** with `sass-loader` for **[Webpack](https://webpack.github.io/)**.
 * A pattern for **lazy loading** resources on demand
 * Development server with **live reload**.
 * **Production builds** with cache busting.
@@ -87,11 +88,25 @@ Webpack will bundle up your code, then, it will put all the code you need to dep
 ### Deploying
 
 Once you've built the files as described above, you can deploy your app.
-I included a `server.js` file with a simple `express.js` implementation.
+I included a `server.js` file with a simple **[Express](http://expressjs.com/)** implementation.
 You can run this in any Node environment you wish. To do this, just use the following:
 
 ```bash
 npm run deploy
+```
+
+### Testing
+
+This is shipped with a **[Karma](https://karma-runner.github.io/1.0/index.html)** configuration. It will take all the files ending in `.spec.js` into your `app` folder and run the tests for you. You can do this a single time:
+
+```bash
+npm run test
+```
+
+... or you can watch the files for changes to rerun the tests:
+
+```bash
+npm run test-watch
 ```
 
 ## About the demo app

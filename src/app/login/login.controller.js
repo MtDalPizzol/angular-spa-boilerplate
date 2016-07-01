@@ -3,7 +3,7 @@ import ngMessages from 'angular-messages';
 
 class LoginController {
 
-  constructor($state, $scope, $rootScope, AUTH_EVENTS) {
+  constructor($state, $rootScope, AUTH_EVENTS) {
 
     let vm = this;
 
